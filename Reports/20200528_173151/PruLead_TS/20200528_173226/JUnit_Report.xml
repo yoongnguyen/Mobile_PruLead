@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PruLead_TS" time="188.652" tests="4" failures="1" errors="0">
+   <testsuite name="PruLead_TS" tests="4" failures="1" errors="0" time="188.652" timestamp="2020-05-28 17:32:34" hostname="runner - localhost" id="Test Suites/PruLead_TS">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/runner/Desktop/HHuong/Automation/Mobile_Demo/Reports/20200528_173151/PruLead_TS/20200528_173226"/>
+         <property name="logFiles" value="/Users/runner/Desktop/HHuong/Automation/Mobile_Demo/Reports/20200528_173151/PruLead_TS/20200528_173226/execution0.log"/>
+         <property name="attachments" value="/Users/runner/Desktop/HHuong/Automation/Mobile_Demo/Reports/20200528_173151/PruLead_TS/20200528_173226/1590662069403.png, /Users/runner/Desktop/HHuong/Automation/Mobile_Demo/Reports/20200528_173151/PruLead_TS/20200528_173226/1590662076094.png"/>
+         <property name="hostName" value="runner - localhost"/>
+         <property name="desiredCapabilities" value="{\n  \&quot;acceptSslCerts\&quot;: true,\n  \&quot;app\&quot;: \&quot;kobiton-store:62000\&quot;,\n  \&quot;browserName\&quot;: \&quot;chrome\&quot;,\n  \&quot;captureSreenShots\&quot;: true,\n  \&quot;deviceName\&quot;: \&quot;Galaxy A3(2016)\&quot;,\n  \&quot;deviceOrientation\&quot;: \&quot;portrait\&quot;,\n  \&quot;platformName\&quot;: \&quot;Android\&quot;,\n  \&quot;platformVersion\&quot;: \&quot;7.0\&quot;,\n  \&quot;sessionDescription\&quot;: \&quot;\&quot;,\n  \&quot;sessionName\&quot;: \&quot;Automation test session\&quot;\n}"/>
+         <property name="remoteDriverUrl" value="http://tamle:7cef9971-0b1d-4705-96df-267887a3070b@api.kobiton.com/wd/hub"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="appiumServerStatus" value="{\&quot;status\&quot;:0,\&quot;value\&quot;:{\&quot;build\&quot;:{\&quot;version\&quot;:\&quot;1.13.0\&quot;,\&quot;revision\&quot;:\&quot;fd170567d5eeb8a7aaf2a693e33389484001e881\&quot;}},\&quot;sessionId\&quot;:null}"/>
+         <property name="katalonVersion" value="7.4.0.1"/>
+         <property name="appiumVersion" value="1.13.0"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+      </properties>
+      <testcase name="Test Cases/Verify agent can Login sucessfully_TC" time="8.023" classname="Test Cases/Verify agent can Login sucessfully_TC" status="PASSED">
+         <system-out><![CDATA[2020-05-28 17:33:59 - [TEST_CASE][PASSED] - Test Cases/Verify agent can Login sucessfully_TC: Test Cases/Verify agent can Login sucessfully_TC
+
+2020-05-28 17:33:59 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-05-28 17:34:02 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-05-28 17:34:02 - [TEST_STEP][PASSED] - homePage = getText(findTestObject("Login_page/lbl_Home"), 10): Text of element 'Object Repository/Login_page/lbl_Home' is: 'Home'
+
+2020-05-28 17:34:07 - [MESSAGE][PASSED] - Text of element 'Object Repository/Login_page/lbl_Home' is: 'Home'
+
+2020-05-28 17:34:07 - [TEST_STEP][PASSED] - login_result = verifyMatch(homePage, "Home", false): Actual text 'Home' and expected text 'Home' are matched 
+
+2020-05-28 17:34:07 - [MESSAGE][PASSED] - Actual text 'Home' and expected text 'Home' are matched 
+
+2020-05-28 17:34:07 - [TEST_STEP][PASSED] - result = "Not Run": null
+
+2020-05-28 17:34:07 - [TEST_STEP][PASSED] - if (login_result): null
+
+2020-05-28 17:34:07 - [TEST_STEP][PASSED] - result = "PASS": null
+
+2020-05-28 17:34:07 - [TEST_STEP][PASSED] - logInfo("The test result of login testcase is: " + result): The test result of login testcase is: PASS
+
+2020-05-28 17:34:07 - [MESSAGE][INFO] - The test result of login testcase is: PASS]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Verify HomePage displays correctly as design_TC" time="34.355" classname="Test Cases/Verify HomePage displays correctly as design_TC" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Verify HomePage displays correctly as design_TC FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Home_page/box_Search' not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:82)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:85)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:1085)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementVisible$1.call(Unknown Source)
+	at Verify HomePage displays correctly as design_TC.run(Verify HomePage displays correctly as design_TC:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590661946415.run(TempTestSuite1590661946415.groovy:37)
+"/>
+         <system-out><![CDATA[2020-05-28 17:34:07 - [TEST_CASE][FAILED] - Test Cases/Verify HomePage displays correctly as design_TC: Test Cases/Verify HomePage displays correctly as design_TC FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Home_page/box_Search' not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:82)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:85)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:1085)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementVisible$1.call(Unknown Source)
+	at Verify HomePage displays correctly as design_TC.run(Verify HomePage displays correctly as design_TC:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590661946415.run(TempTestSuite1590661946415.groovy:37)
+
+
+2020-05-28 17:34:07 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-05-28 17:34:09 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-05-28 17:34:09 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home_page/btn_NewProspect"), 10): Element 'Object Repository/Home_page/btn_NewProspect' is visible
+
+2020-05-28 17:34:13 - [MESSAGE][PASSED] - Element 'Object Repository/Home_page/btn_NewProspect' is visible
+
+2020-05-28 17:34:13 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Home_page/btn_AgentPrefers"), 10): Element 'Object Repository/Home_page/btn_AgentPrefers' is visible
+
+2020-05-28 17:34:18 - [MESSAGE][PASSED] - Element 'Object Repository/Home_page/btn_AgentPrefers' is visible
+
+2020-05-28 17:34:18 - [TEST_STEP][FAILED] - verifyElementVisible(findTestObject("Home_page/box_Search"), 10): Failed to check for element 'Object Repository/Home_page/box_Search' visible (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Home_page/box_Search' not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:82)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:85)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:1085)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementVisible$1.call(Unknown Source)
+	at Verify HomePage displays correctly as design_TC.run(Verify HomePage displays correctly as design_TC:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590661946415.run(TempTestSuite1590661946415.groovy:37)
+)
+
+2020-05-28 17:34:36 - [MESSAGE][FAILED] - Element 'Object Repository/Home_page/box_Search' not found
+[[ATTACHMENT|/Users/runner/Desktop/HHuong/Automation/Mobile_Demo/Reports/20200528_173151/PruLead_TS/20200528_173226/1590662069403.png]]
+
+2020-05-28 17:34:41 - [MESSAGE][FAILED] - Failed to check for element 'Object Repository/Home_page/box_Search' visible (Root cause: com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Home_page/box_Search' not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:82)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:85)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:1085)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementVisible$1.call(Unknown Source)
+	at Verify HomePage displays correctly as design_TC.run(Verify HomePage displays correctly as design_TC:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590661946415.run(TempTestSuite1590661946415.groovy:37)
+)
+[[ATTACHMENT|/Users/runner/Desktop/HHuong/Automation/Mobile_Demo/Reports/20200528_173151/PruLead_TS/20200528_173226/1590662076094.png]]]]></system-out>
+         <system-err><![CDATA[2020-05-28 17:34:07 - [TEST_CASE][FAILED] - Test Cases/Verify HomePage displays correctly as design_TC: Test Cases/Verify HomePage displays correctly as design_TC FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Home_page/box_Search' not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:82)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:85)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:1085)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementVisible$1.call(Unknown Source)
+	at Verify HomePage displays correctly as design_TC.run(Verify HomePage displays correctly as design_TC:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590661946415.run(TempTestSuite1590661946415.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Verify_Accept funciton works correctly" time="37.813" classname="Test Cases/Verify_Accept funciton works correctly" status="PASSED">
+         <system-out><![CDATA[2020-05-28 17:34:41 - [TEST_CASE][PASSED] - Test Cases/Verify_Accept funciton works correctly: Test Cases/Verify_Accept funciton works correctly
+
+2020-05-28 17:34:41 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-05-28 17:34:44 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-05-28 17:34:44 - [TEST_STEP][PASSED] - tap(findTestObject("Lead_page/btn_Accept"), 10): Tapped on element 'Object Repository/Lead_page/btn_Accept'
+
+2020-05-28 17:34:50 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Lead_page/btn_Accept'
+
+2020-05-28 17:34:50 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-05-28 17:34:52 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-05-28 17:34:52 - [TEST_STEP][PASSED] - tap(findTestObject("Lead_page/btn_Accept"), 10): Tapped on element 'Object Repository/Lead_page/btn_Accept'
+
+2020-05-28 17:34:57 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Lead_page/btn_Accept'
+
+2020-05-28 17:34:57 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-05-28 17:34:59 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-05-28 17:34:59 - [TEST_STEP][PASSED] - tap(findTestObject("Lead_page/btn_Accept"), 10): Tapped on element 'Object Repository/Lead_page/btn_Accept'
+
+2020-05-28 17:35:05 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Lead_page/btn_Accept'
+
+2020-05-28 17:35:05 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-05-28 17:35:07 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-05-28 17:35:07 - [TEST_STEP][PASSED] - count_accept = getText(findTestObject("Accept_page/tab_Accept"), 10): Text of element 'Object Repository/Accept_page/tab_Accept' is: 'Accept(3)'
+
+2020-05-28 17:35:11 - [MESSAGE][PASSED] - Text of element 'Object Repository/Accept_page/tab_Accept' is: 'Accept(3)'
+
+2020-05-28 17:35:11 - [TEST_STEP][PASSED] - result = "Not Run": null
+
+2020-05-28 17:35:11 - [TEST_STEP][PASSED] - if (count_accept == "Accept(3)"): null
+
+2020-05-28 17:35:11 - [TEST_STEP][PASSED] - markPassed("The Accept function working correctly"): The Accept function working correctly
+
+2020-05-28 17:35:11 - [MESSAGE][PASSED] - The Accept function working correctly
+
+2020-05-28 17:35:11 - [TEST_STEP][PASSED] - result = "PASS": null
+
+2020-05-28 17:35:11 - [TEST_STEP][PASSED] - logInfo("The test result is: " + result): The test result is: PASS
+
+2020-05-28 17:35:11 - [MESSAGE][INFO] - The test result is: PASS
+
+2020-05-28 17:35:11 - [TEST_STEP][PASSED] - tap(findTestObject("Accept_page/tab_Accept"), 10): Tapped on element 'Object Repository/Accept_page/tab_Accept'
+
+2020-05-28 17:35:17 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Accept_page/tab_Accept'
+
+2020-05-28 17:35:17 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-05-28 17:35:19 - [MESSAGE][PASSED] - Delayed 2 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Verify Lead_tab displays correctly as design_TC" time="19.927" classname="Test Cases/Verify Lead_tab displays correctly as design_TC" status="PASSED">
+         <system-out><![CDATA[2020-05-28 17:35:19 - [TEST_CASE][PASSED] - Test Cases/Verify Lead_tab displays correctly as design_TC: Test Cases/Verify Lead_tab displays correctly as design_TC
+
+2020-05-28 17:35:19 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-05-28 17:35:22 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-05-28 17:35:22 - [TEST_STEP][PASSED] - tap(findTestObject("Lead_page/tab_Lead"), 10): Tapped on element 'Object Repository/Lead_page/tab_Lead'
+
+2020-05-28 17:35:29 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Lead_page/tab_Lead'
+
+2020-05-28 17:35:29 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Lead_page/btn_Accept"), 10): Element 'Object Repository/Lead_page/btn_Accept' is visible
+
+2020-05-28 17:35:34 - [MESSAGE][PASSED] - Element 'Object Repository/Lead_page/btn_Accept' is visible
+
+2020-05-28 17:35:34 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Lead_page/btn_detailAgent"), 10): Element 'Object Repository/Lead_page/btn_detailAgent' is visible
+
+2020-05-28 17:35:39 - [MESSAGE][PASSED] - Element 'Object Repository/Lead_page/btn_detailAgent' is visible]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-05-28 17:32:34 - [TEST_SUITE][FAILED] - PruLead_TS: Test Cases/Verify HomePage displays correctly as design_TC FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Home_page/box_Search' not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:82)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:85)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:1085)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementVisible$1.call(Unknown Source)
+	at Verify HomePage displays correctly as design_TC.run(Verify HomePage displays correctly as design_TC:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590661946415.run(TempTestSuite1590661946415.groovy:37)]]></system-out>
+      <system-err><![CDATA[2020-05-28 17:32:34 - [TEST_SUITE][FAILED] - PruLead_TS: Test Cases/Verify HomePage displays correctly as design_TC FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Element 'Object Repository/Home_page/box_Search' not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:82)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:85)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyElementVisible(MobileBuiltInKeywords.groovy:1085)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyElementVisible$1.call(Unknown Source)
+	at Verify HomePage displays correctly as design_TC.run(Verify HomePage displays correctly as design_TC:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590661946415.run(TempTestSuite1590661946415.groovy:37)]]></system-err>
+   </testsuite>
+</testsuites>

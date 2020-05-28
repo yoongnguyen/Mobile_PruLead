@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify HomePage displays correctly as design_TC</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b049a9d8-3c52-4c3d-a2f3-9cfa6417eaed</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,37 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+PruLead_TS,,,,2020-05-28 17:32:34,2020-05-28 17:35:39,3m - 5.074s,FAILED
+,,,,,,,
+Test Cases/Verify agent can Login sucessfully_TC,,,,2020-05-28 17:33:59,2020-05-28 17:34:07,8.023s,PASSED
+delay(3),,,,2020-05-28 17:33:59,2020-05-28 17:34:02,3.018s,PASSED
+"homePage = getText(findTestObject(""Login_page/lbl_Home""), 10)",,,,2020-05-28 17:34:02,2020-05-28 17:34:07,4.799s,PASSED
+"login_result = verifyMatch(homePage, ""Home"", false)",,"Check the login is success or not. Success if HomePage title = ""Home""",,2020-05-28 17:34:07,2020-05-28 17:34:07,0.005s,PASSED
+"result = ""Not Run""",,,,2020-05-28 17:34:07,2020-05-28 17:34:07,0.000s,PASSED
+if (login_result),,,,2020-05-28 17:34:07,2020-05-28 17:34:07,0.001s,PASSED
+"logInfo(""The test result of login testcase is: "" + result)",,,,2020-05-28 17:34:07,2020-05-28 17:34:07,0.003s,PASSED
+,,,,,,,
+Test Cases/Verify HomePage displays correctly as design_TC,,,,2020-05-28 17:34:07,2020-05-28 17:34:41,34.355s,FAILED
+delay(2),,,,2020-05-28 17:34:07,2020-05-28 17:34:09,2.008s,PASSED
+"verifyElementVisible(findTestObject(""Home_page/btn_NewProspect""), 10)",,Verify add new prospect icon buttton should be displayed on the Home Page,,2020-05-28 17:34:09,2020-05-28 17:34:13,4.455s,PASSED
+"verifyElementVisible(findTestObject(""Home_page/btn_AgentPrefers""), 10)",,Verify icon button Agent Prefers should be present on the Home Page,,2020-05-28 17:34:13,2020-05-28 17:34:18,4.699s,PASSED
+"verifyElementVisible(findTestObject(""Home_page/box_Search""), 10)",,Verify Search box should be present on the Home Page,,2020-05-28 17:34:18,2020-05-28 17:34:41,23.090s,FAILED
+,,,,,,,
+Test Cases/Verify_Accept funciton works correctly,,,,2020-05-28 17:34:41,2020-05-28 17:35:19,37.813s,PASSED
+delay(3),,,,2020-05-28 17:34:41,2020-05-28 17:34:44,3.004s,PASSED
+"tap(findTestObject(""Lead_page/btn_Accept""), 10)",,,,2020-05-28 17:34:44,2020-05-28 17:34:50,5.635s,PASSED
+delay(2),,,,2020-05-28 17:34:50,2020-05-28 17:34:52,2.004s,PASSED
+"tap(findTestObject(""Lead_page/btn_Accept""), 10)",,,,2020-05-28 17:34:52,2020-05-28 17:34:57,5.515s,PASSED
+delay(2),,,,2020-05-28 17:34:57,2020-05-28 17:34:59,2.003s,PASSED
+"tap(findTestObject(""Lead_page/btn_Accept""), 10)",,,,2020-05-28 17:34:59,2020-05-28 17:35:05,5.937s,PASSED
+delay(2),,,,2020-05-28 17:35:05,2020-05-28 17:35:07,2.004s,PASSED
+"count_accept = getText(findTestObject(""Accept_page/tab_Accept""), 10)",,Verify tab Accept is counted increase by 1 when cliking Aceept button,,2020-05-28 17:35:07,2020-05-28 17:35:11,4.045s,PASSED
+"result = ""Not Run""",,,,2020-05-28 17:35:11,2020-05-28 17:35:11,0.000s,PASSED
+"if (count_accept == ""Accept(3)"")",,,,2020-05-28 17:35:11,2020-05-28 17:35:11,0.003s,PASSED
+"logInfo(""The test result is: "" + result)",,,,2020-05-28 17:35:11,2020-05-28 17:35:11,0.001s,PASSED
+"tap(findTestObject(""Accept_page/tab_Accept""), 10)",,,,2020-05-28 17:35:11,2020-05-28 17:35:17,5.537s,PASSED
+delay(2),,,,2020-05-28 17:35:17,2020-05-28 17:35:19,2.002s,PASSED
+,,,,,,,
+Test Cases/Verify Lead_tab displays correctly as design_TC,,,,2020-05-28 17:35:19,2020-05-28 17:35:39,19.927s,PASSED
+delay(3),,,,2020-05-28 17:35:19,2020-05-28 17:35:22,3.007s,PASSED
+"tap(findTestObject(""Lead_page/tab_Lead""), 10)",,,,2020-05-28 17:35:22,2020-05-28 17:35:29,7.299s,PASSED
+"verifyElementVisible(findTestObject(""Lead_page/btn_Accept""), 10)",,Verify button Accept should be displayed on the Lead tab,,2020-05-28 17:35:29,2020-05-28 17:35:34,5.005s,PASSED
+"verifyElementVisible(findTestObject(""Lead_page/btn_detailAgent""), 10)",,Verify button view Prospect Details should be displayed on the Lead tab,,2020-05-28 17:35:34,2020-05-28 17:35:39,4.498s,PASSED
